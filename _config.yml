@@ -5,11 +5,11 @@
 #
 
 # no trailing slash
-url: https://point-theme.netlify.app
+#url: https://point-theme.netlify.app
 
 # for header and meta tags
-title: Point Theme 🎯
-description: description for search engines and social media cards
+title: Baoqi Eileen Chen
+description: UC Berkeley
 
 # set external to true if linking outside your website
 # for internal, make sure to include preceding slash
@@ -17,17 +17,23 @@ nav-links:
   - name: Home
     url: /
     external: false
+  - name: Projects
+    url: /about
+    external: false
   - name: Blog
     url: /blog
     external: false
-  - name: Search Engine
-    url: https://duckduckgo.com
-    external: true
+  - name: misc.
+    url: /misc
+    external: false
+ # - name: Search Engine
+ #   url: https://duckduckgo.com
+ #   external: true
 
 # for the homepage image + big text next to it
 greeting_image: /assets/me.jpg
 # 100-200 characters recommended
-greeting_text: Hey, I'm Point Theme! I'm a Jekyll theme for personal websites that are short & to the point. Fork it on Github, customize the styles and options, and enjoy!
+greeting_text: I am a Master of City Planning student at UC Berkeley researching human mobility. My broad interests involve deploying spatial data-driven ways to study people in complex systems. Before graduate school, I was a sustainability and urban beat reporter with R&D experience in newsroom engineering.
 
 # show blog post excerpts on blog page
 show_excerpts: false
