@@ -1,11 +1,11 @@
 ---
 ---
 
-$accent-color: #b00; // link color
-$font-stack: system-ui, Helvetica, Arial, sans-serif;
-$heading-font-stack: system-ui, Helvetica, Arial, sans-serif; // use this to set a different font for your headings if you want
+$accent-color: #759465; // link color
+$font-stack: 'CMU Serif', Helvetica, sans-serif; #system-ui
+$heading-font-stack: 'CMU Serif', Helvetica, sans-serif; // use this to set a different font for your headings if you want
 $code-font-stack: Inconsolata, monospace; // fonts for inline code and code blocks
-$container-max-width: 700px;
+$container-max-width: 777px;
 
 // reset
 * {
