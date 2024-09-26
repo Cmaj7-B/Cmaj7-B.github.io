@@ -2,8 +2,8 @@
 ---
 
 $accent-color: #759465; // link color
-$font-stack: 'CMU Serif', Helvetica, sans-serif; //system-ui
-$heading-font-stack: 'CMU Serif', Helvetica, sans-serif; // use this to set a different font for your headings if you want
+$font-stack: 'Palatino','Helvetica',system-ui; //system-ui, Menlo, Palatino,'CMU serif'
+$heading-font-stack: 'Palatino','Helvetica',system-ui; // use this to set a different font for your headings if you want
 $code-font-stack: Inconsolata, monospace; // fonts for inline code and code blocks
 $container-max-width: 777px;
 
