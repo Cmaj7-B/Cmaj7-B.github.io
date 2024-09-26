@@ -33,7 +33,7 @@ nav-links:
 # for the homepage image + big text next to it
 greeting_image: /assets/me.jpg
 # 100-200 characters recommended
-greeting_text: I am a Master of City Planning student at UC Berkeley researching human mobility. My broad interests involve deploying spatial data-driven ways to study people in complex systems. Before graduate school, I was a sustainability and urban beat reporter with R&D experience in newsroom engineering.
+greeting_text: I am a Master of City Planning student at UC Berkeley. My broad interests involve deploying spatial data-driven ways to study people in complex systems. Before graduate school, I was a sustainability and urban beat reporter with R&D experience in newsroom engineering.
 
 # show blog post excerpts on blog page
 show_excerpts: false
