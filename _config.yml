@@ -8,7 +8,7 @@
 #url: https://point-theme.netlify.app
 
 # for header and meta tags
-title: Baoqi Eileen Chen
+title: Bǎoqí Eileen Chen
 description: UC Berkeley
 
 # set external to true if linking outside your website
@@ -17,8 +17,8 @@ nav-links:
   - name: Home
     url: /
     external: false
-  - name: Projects
-    url: /about
+  - name: Project
+    url: /project
     external: false
   - name: Blog
     url: /blog
@@ -33,7 +33,7 @@ nav-links:
 # for the homepage image + big text next to it
 greeting_image: /assets/me.jpg
 # 100-200 characters recommended
-greeting_text: I am a Master of City Planning student at UC Berkeley. My research deploys spatial data to understand human mobility and urban dynamics. Before graduate school, I was a reporter with R&D experience in newsroom engineering.
+greeting_text: I am a Master of City Planning student at UC Berkeley. My research deploys spatial data to understand city-scale human mobility. Before graduate school, I studied climate system dynamics and was a reporter with R&D experience in newsroom engineering.
 
 # show blog post excerpts on blog page
 show_excerpts: false
