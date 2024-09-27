@@ -15,5 +15,5 @@
 - <span style="color: #5995C3;">**[Conference]**</span> 2024 Apr. Working paper [presented](https://aag.secure-platform.com/aag2024/gallery/rounds/74/details/59307) at the American Association of Geographers 2024 Annual Meeting
 - <span style="color: #9A8CA7;">**[Award]**</span> 2023 May. Received Renaissance Scholar Distinction [Prize](https://studentrecognition.usc.edu/wp-content/uploads/sites/5/2023/05/StudentRec_Program_2023.pdf) toward graduate studies
 - <span style="color: #9A8CA7;">**[Award]**</span> 2023 May. Poster [won](https://scag.ca.gov/student-showcase) Jury Prize at 2023 SCAG’s Regional Conference and General Assembly Student Showcase
-- <span style="color: #9A8CA7;">**[Award]**</span> 2023 Feb. Poster [won](https://scag.ca.gov/student-showcase) Award of 
-Most Suitably Applied Methodology at 2023 Los Angeles Geospatial Summit
+- <span style="color: #9A8CA7;">**[Award]**</span> 2023 Feb. Poster [won]([https://scag.ca.gov/student-showcase](https://www.esri.com/en-us/industries/blog/articles/competition-enables-students-to-share-their-geospatial-projects/)) Award of 
+Most Suitably Applied Methodology at the 2023 Los Angeles Geospatial Summit
