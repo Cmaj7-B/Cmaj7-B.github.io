@@ -1,29 +1,19 @@
 ---
 ---
 
-## 🤷 What I do
+## Current obsessions
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+- Human mobility and urban spatial structure
+- Community-generated big data and healthy cities
+- EVs
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Scoops
 
-## 🦕 What I've done before
-
-Purus non enim praesent elementum facilisis. In aliquam sem fringilla ut. Hac habitasse platea dictumst vestibulum rhoncus est. Ut porttitor leo a diam sollicitudin.
-
-Amet commodo nulla facilisi nullam vehicula ipsum a arcu. Venenatis urna cursus eget nunc. Dui accumsan sit amet nulla facilisi morbi tempus. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Sem viverra aliquet eget sit amet tellus cras.
-
-Sit amet tellus cras adipiscing enim eu turpis egestas pretium. Ipsum faucibus vitae aliquet nec. Ac auctor augue mauris augue neque gravida. Neque egestas congue quisque egestas.
-
-## 👋🏻 Say hi
-
-Wanna chat? Feel free to reach out!
-
-- Source code: [@katmh/point-theme](http://github.com/katmh/point-theme)
-- [Issues](https://github.com/katmh/point-theme/issues)
-
-## 📠 Fun facts
-
-- You can customize link colors, container width, and fonts in `styles/styles.scss`
-- This theme has built-in options for 2 different date formats: "November 12, 2018" and "Nov '18"
-- Be sure to look through the config file to change the site title, description, homepage greeting, and more
+- <span style="color: #D2607F;">**[Grant]**</span> 2024 Sept. Project [funded](https://www.ucits.org/research-project/2025-04/) by Statewide Transportation Research Program (STRP) 
+- <span style="color: #5995C3;">**[Conference]**</span> 2024 Sept. Working paper [presented](https://ccs24.cssociety.org/wp-content/uploads/2024/09/Programme_Sept4_CCS24.pdf) at the 20th Conference on Complex Systems
+- <span style="color: #5995C3;">**[Conference]**</span> 2024 July. Poster [presented](https://ic2s2-2024.org/schedule) at the 10th International Conference on Computational Social Science
+- <span style="color: #5995C3;">**[Conference]**</span> 2024 Apr. Working paper [presented](https://aag.secure-platform.com/aag2024/gallery/rounds/74/details/59307) at the American Association of Geographers 2024 Annual Meeting
+- <span style="color: #9A8CA7;">**[Award]**</span> 2023 May. Received Renaissance Scholar Distinction [Prize](https://studentrecognition.usc.edu/wp-content/uploads/sites/5/2023/05/StudentRec_Program_2023.pdf) toward graduate studies
+- <span style="color: #9A8CA7;">**[Award]**</span> 2023 May. Poster [won](https://scag.ca.gov/student-showcase) Jury Prize at 2023 SCAG’s Regional Conference and General Assembly Student Showcase
+- <span style="color: #9A8CA7;">**[Award]**</span> 2023 Feb. Poster [won](https://scag.ca.gov/student-showcase) Award of 
+Most Suitably Applied Methodology at 2023 Los Angeles Geospatial Summit
