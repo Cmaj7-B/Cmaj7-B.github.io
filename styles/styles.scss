@@ -1,11 +1,12 @@
 ---
 ---
 
+
 $accent-color: #496A60; // link color
-$font-stack: Georgia, 'Palatino Linotype','HelveticaNeue'; // Didot, Courier
+$font-stack: 'Palatino Linotype','HelveticaNeue'; // Didot, Courier
 $heading-font-stack: 'Palatino Linotype','HelveticaNeue',system-ui; // use this to set a different font for your headings if you want
 $code-font-stack: Inconsolata, monospace; // fonts for inline code and code blocks
-$container-max-width: 888px;
+$container-max-width: 900px;
 
 // reset
 * {
@@ -20,9 +21,9 @@ body {
 }
 
 #container {
-  width: 90%;
+  width: 100%;
   max-width: $container-max-width;
-  margin: 2.5rem auto;
+  margin: 2em auto;
 }
 
 // navigation
@@ -40,7 +41,7 @@ nav li {
 }
 
 nav a {
-  margin-right: 2.5rem;
+  margin-right: 1.5rem;
   text-decoration: none;
   font-size: 1.1rem;
 }
@@ -56,24 +57,25 @@ h3 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-top: 1rem;
   //text-align: center;
 }
 
 .global-title {
-  font-size: 2.6rem;
+  font-size: 1.7rem;
   color: #222;
-  font-family: $heading-font-stack;
+  //font-family: $heading-font-stack;
+  font-family:'Courier New', Courier, monospace
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 h2,
@@ -123,15 +125,16 @@ img {
 // homepage greeting component
 .greeting-container {
   display: flex;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 
 .greeting-container h3 {
   align-self: center;
   margin: 0;
   font-weight: 70;
-  font-size:1.1em;
-  line-height: 1.6em;
+  font-size:1.05em;
+  line-height: 1.5em;
+  //font-family:'Courier New', Courier, monospace
 }
 
 // blog page
@@ -173,4 +176,78 @@ code {
   padding: 3px 5px;
   border-radius: 2px;
   font-family: $code-font-stack;
+}
+
+// gallery
+
+.gallery-body #container {
+  font-family: $font-stack;
+  line-height: 1.6;
+  color: #333;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 1.25em;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3em;
+}
+
+.project {
+  display: flex;
+  align-items: flex-start;
+}
+
+.project-image {
+  width: 140px;
+  height: 140px;
+  margin-right: 1.25em;
+  flex-shrink: 0;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #000;
+}
+
+.project-text {
+  flex-grow: 1;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 140px;
+}
+
+.project-title {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.project-description {
+  align-self: start;
+  margin: 0.3125em 0;
+  font-size: 0.9em;
+}
+
+.project-date {
+  align-self: end;
+  font-style: italic;
+  color: #666;
+  font-size: 0.9em;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .project-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) { 
+  .project-grid {
+      grid-template-columns: 1fr;
+  }
 }
