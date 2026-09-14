@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bǎoqí Eileen Chen</title>
+        <meta name="description" content="UC Berkeley">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="icon" href="/assets/images/favicon.jpg" type="image/jpg">
+        <!-- Pre-paint hide to prevent zoom flicker -->
+        <style id="prepaint-hide">html{opacity:0}</style>
+        <!-- Uniform page scaling based on viewport height (no transitions) -->
+        <style>
+          html { --page-scale: 1; }
+          #container {
+            transform: scale(var(--page-scale));
+            transform-origin: top center;
+            width: calc(100% / var(--page-scale));
+          }
+        </style>
+        <script>
+        (function(){
+          var d=document;
+          function setScale(){
+            var vh = window.innerHeight || d.documentElement.clientHeight;
+            var targetH = 832; // baseline height where scale ≈ 1 (fits 1280×832)
+            var raw = vh / targetH;
+            var min = 0.94, max = 1.12; // clamp to avoid extremes
+            var scale = Math.min(max, Math.max(min, raw));
+            d.documentElement.style.setProperty('--page-scale', scale.toFixed(3));
+            // No layout height adjustments here; scaling is visual-only
+          }
+          // Compute before first paint and reveal
+          setScale();
+          var h = d.getElementById('prepaint-hide');
+          if (h && h.parentNode) h.parentNode.removeChild(h);
+          d.documentElement.style.opacity = '';
+          window.addEventListener('resize', setScale, {passive:true});
+          // Keep simple: only react to resizes; initial run already executed before reveal
+        })();
+        </script>
+    </head>
+    
+    <body>
+        <div id="container">
+            <h1 class="global-title">Bǎoqí Eileen Chen‍</h1>
+            
+            <nav>
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/">
+                        
+                            Home
+                        </a>
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/project">
+                        
+                            Work
+                        </a>
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/misc">
+                        
+                            Other
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            
+
+
+
+<h1>
+  
+</h1>
+
+
+
+
+
+
+<h2 id="-facts">📌 Facts</h2>
+
+<p><em>~ of no particular order</em></p>
+
+<hr />
+
+<p>I am ambidextrous.</p>
+
+<p>I am an <a href="https://www.calliope-ebma.org/dr-richard-cushman-organ-scholarship">organist</a>.</p>
+
+<h2 id="️-muses">✏️ Muses</h2>
+
+<p><em>~ alphabetically</em></p>
+
+<hr />
+
+<p><i>Alice’s <a href="https://www.cs.cmu.edu/~rgs/alice-table.html">Adventures</a> in (a <a href="https://www.sscardapane.it/assets/alice/Alice_book_volume_1.pdf">differentiable</a>) wonderland</i> by Lewis Carroll (by Simone Scardapane)</p>
+
+<p><a href="https://www.gutenberg.org/files/575/575-h/575-h.htm"><i>Essays</i></a> by Francis Bacon</p>
+
+<p><i>Obliscence</i> by Geoffrey Sonnabend</p>
+
+<p><i><a href="https://archive.org/details/penserclasser0000pere/page/150/mode/2up">Penser / Classer</a></i> (Thoughts of Sorts/Sorts of Thoughts) by Georges Perec</p>
+
+<p><i>Wallflower at the Orgy</i> by Nora Ephron<br /></p>
+
+
+        </div>
+    </body>
+</html>
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bǎoqí Eileen Chen</title>
+        <meta name="description" content="UC Berkeley">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="icon" href="/assets/images/favicon.jpg" type="image/jpg">
+        <!-- Pre-paint hide to prevent zoom flicker -->
+        <style id="prepaint-hide">html{opacity:0}</style>
+        <!-- Uniform page scaling based on viewport height (no transitions) -->
+        <style>
+          html { --page-scale: 1; }
+          #container {
+            transform: scale(var(--page-scale));
+            transform-origin: top center;
+            width: calc(100% / var(--page-scale));
+          }
+        </style>
+        <script>
+        (function(){
+          var d=document;
+          function setScale(){
+            var vh = window.innerHeight || d.documentElement.clientHeight;
+            var targetH = 832; // baseline height where scale ≈ 1 (fits 1280×832)
+            var raw = vh / targetH;
+            var min = 0.94, max = 1.12; // clamp to avoid extremes
+            var scale = Math.min(max, Math.max(min, raw));
+            d.documentElement.style.setProperty('--page-scale', scale.toFixed(3));
+            // No layout height adjustments here; scaling is visual-only
+          }
+          // Compute before first paint and reveal
+          setScale();
+          var h = d.getElementById('prepaint-hide');
+          if (h && h.parentNode) h.parentNode.removeChild(h);
+          d.documentElement.style.opacity = '';
+          window.addEventListener('resize', setScale, {passive:true});
+          // Keep simple: only react to resizes; initial run already executed before reveal
+        })();
+        </script>
+    </head>
+    
+    <body>
+        <div id="container">
+            <h1 class="global-title">Bǎoqí Eileen Chen‍</h1>
+            
+            <nav>
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/">
+                        
+                            Home
+                        </a>
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/project">
+                        
+                            Work
+                        </a>
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/misc">
+                        
+                            Other
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            
+
+
+
+<h1>
+  A 2SFCA Approach for Planning EV Charging Infrastructure
+</h1>
+
+
+
+
+
+
+<p><br />
+We propose a Two-step Floating Catchment Area (2SFCA) method for evaluating accessibility to EV infrastructure that leverages public data to calculate chargers’ varying temporal service availability and drivers’ charging behavior in different spatial contexts. It builds on the original 2SFCA model to incorporate the spatiotemporal supply-and-demand dynamics of EV charging, offering a simple but effective analytical framework. Results show high accessibility near the downtown area, decreasing in a ring pattern toward the urban peripheries. Additionally, neighborhoods with the most EV registrations tend not to have access to sufficient charging resources.</p>
+
+<h3 id="acknowledgements">Acknowledgements</h3>
+<p>The project received feedback from attendees of the ACSP 2023 Chicago Annual Conference (session talk), the First Research Summit of Urban Science (poster), 2023 SCAG’s Regional Conference and General Assembly (poster), and 2023 Los Angeles Geospatial Summit (<a href="https://storymaps.arcgis.com/stories/0f01047c88554a219980030773569959">Story Map</a>).</p>
+
+
+        </div>
+    </body>
+</html>
+

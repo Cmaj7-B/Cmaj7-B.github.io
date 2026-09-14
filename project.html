@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bǎoqí Eileen Chen</title>
+        <meta name="description" content="UC Berkeley">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="icon" href="/assets/images/favicon.jpg" type="image/jpg">
+        <!-- Pre-paint hide to prevent zoom flicker -->
+        <style id="prepaint-hide">html{opacity:0}</style>
+        <!-- Uniform page scaling based on viewport height (no transitions) -->
+        <style>
+          html { --page-scale: 1; }
+          #container {
+            transform: scale(var(--page-scale));
+            transform-origin: top center;
+            width: calc(100% / var(--page-scale));
+          }
+        </style>
+        <script>
+        (function(){
+          var d=document;
+          function setScale(){
+            var vh = window.innerHeight || d.documentElement.clientHeight;
+            var targetH = 832; // baseline height where scale ≈ 1 (fits 1280×832)
+            var raw = vh / targetH;
+            var min = 0.94, max = 1.12; // clamp to avoid extremes
+            var scale = Math.min(max, Math.max(min, raw));
+            d.documentElement.style.setProperty('--page-scale', scale.toFixed(3));
+            // No layout height adjustments here; scaling is visual-only
+          }
+          // Compute before first paint and reveal
+          setScale();
+          var h = d.getElementById('prepaint-hide');
+          if (h && h.parentNode) h.parentNode.removeChild(h);
+          d.documentElement.style.opacity = '';
+          window.addEventListener('resize', setScale, {passive:true});
+          // Keep simple: only react to resizes; initial run already executed before reveal
+        })();
+        </script>
+    </head>
+    
+    <body>
+        <div id="container">
+            <h1 class="global-title">Bǎoqí Eileen Chen‍</h1>
+            
+            <nav>
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/">
+                        
+                            Home
+                        </a>
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/project">
+                        
+                            Work
+                        </a>
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/misc">
+                        
+                            Other
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            
+
+
+
+<h1>
+  
+</h1>
+
+
+
+
+
+
+<div class="gallery-body">
+    <center>
+      <h2>💡 Paper</h2>
+    </center>
+    <style>
+      .paper-list ul { padding-left:0em;padding-right:0.5em; list-style-type:square; }
+      .paper-list li { margin-bottom:0.8em; }
+    </style>
+    <div class="paper-list" style="max-width:80%; margin:0 auto; font-size:0.9em; line-height:1.6;">
+
+    <hr />
+
+    <p><br /></p>
+
+    <ul>
+      <li>Yin, H., Eckel, S. P., Kaur, M., Cohen, G., Sutherland, L., Tome, M., <strong>Chen, B. E.</strong>, Motamed, A., Meshkati, N., Hu, H., McConnell, R., &amp; Sharma, B. (2026). Estimating facility-level greenhouse gas emissions in US hospitals with machine learning imputation of incomplete self-reported data. <em>Cleaner Environmental Systems</em>, 22, 100461. <a href="https://doi.org/10.1016/j.cesys.2026.100461">(link)</a></li>
+      <li>Cao, S., Wu, J., Kasliwal, A., <strong>Chen, B.</strong>, Perona, G., &amp; González, M. C. (2026). DeepTimeGeo: Trajectory reconstruction from sparse data with transformer. <em>IEEE Transactions on Intelligent Transportation Systems</em>. <a href="https://doi.org/10.1109/TITS.11397287">(link)</a></li>
+    </ul>
+
+    <p><br /></p>
+
+    <hr />
+
+  </div><br />
+
+    <center>
+      <h2>⚙️ Project</h2>
+    </center><br />
+    <div class="project-grid">
+    
+        
+          <a href="/projects/2SFCA4EV" class="project-link">
+            <div class="project">
+                <div class="project-image">
+                    <img src="assets/images/low-res/2sfca-ev.png" alt="2SFCA4EV" />
+                </div>
+                <div class="project-text">
+                    <h3 class="project-title">2SFCA4EV</h3><br />
+                    <p class="project-description">gravity model for charging infrastructure planning</p>
+                    <p class="project-date">2023</p>
+                </div>
+            </div>
+          </a>
+        
+    
+        
+          <a href="/projects/HuMob4Trees" class="project-link">
+            <div class="project">
+                <div class="project-image">
+                    <img src="assets/images/low-res/tree-map.png" alt="HuMob4Trees" />
+                </div>
+                <div class="project-text">
+                    <h3 class="project-title">HuMob4Trees</h3><br />
+                    <p class="project-description">pedestrian traffic modeling, reproducible GIS framework</p>
+                    <p class="project-date">2022-23</p>
+                </div>
+            </div>
+          </a>
+        
+    
+        
+          <a href="/projects/MWDHub" class="project-link">
+            <div class="project">
+                <div class="project-image">
+                    <img src="assets/images/low-res/mwd.jpg" alt="MWDHub" />
+                </div>
+                <div class="project-text">
+                    <h3 class="project-title">MWDHub</h3><br />
+                    <p class="project-description">dashboard, geospatial database, front-end dev</p>
+                    <p class="project-date">2021-22</p>
+                </div>
+            </div>
+          </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    </div><br />
+
+    <center>
+      <h2>🔧 Fun</h2>
+    </center><br />
+    <div class="project-grid">
+    
+        
+    
+        
+    
+        
+    
+        
+          <a href="/projects/Rossetti" class="project-link">
+            <div class="project">
+                <div class="project-image">
+                    <img src="assets/images/low-res/rossetti.jpg" alt="re:vissetti" />
+                </div>
+                <div class="project-text">
+                    <h3 class="project-title">re:vissetti</h3><br />
+                    <p class="project-description">ascii art partly inspired by christina rossetti</p>
+                    <p class="project-date">2025</p>
+                </div>
+            </div>
+          </a>
+        
+    
+        
+          <a href="https://bmaj7-c.github.io/reading-dashboard-site/" class="project-link">
+            <div class="project">
+                <div class="project-image">
+                    <img src="assets/images/low-res/reading-dashboard.png" alt="what am i | read(ing)" />
+                </div>
+                <div class="project-text">
+                    <h3 class="project-title">what am i | read(ing)</h3><br />
+                    <p class="project-description">visualizing 2024 library activities via d3.js</p>
+                    <p class="project-date">2025</p>
+                </div>
+            </div>
+          </a>
+        
+    
+        
+          <a href="assets/sites/road-not-taken/path.html" class="project-link">
+            <div class="project">
+                <div class="project-image">
+                    <img src="assets/images/low-res/wu-xu-bi-ji.jpg" alt="the waaaaaaay" />
+                </div>
+                <div class="project-text">
+                    <h3 class="project-title">the waaaaaaay</h3><br />
+                    <p class="project-description">road not taken inspired by endless.horse</p>
+                    <p class="project-date">2025</p>
+                </div>
+            </div>
+          </a>
+        
+    
+        
+          <a href="/projects/SusNetUSC" class="project-link">
+            <div class="project">
+                <div class="project-image">
+                    <img src="assets/images/gif/sus-net.gif" alt="SusNet@USC" />
+                </div>
+                <div class="project-text">
+                    <h3 class="project-title">SusNet@USC</h3><br />
+                    <p class="project-description">mapping a decade of sustainability initiative network evolution</p>
+                    <p class="project-date">2022</p>
+                </div>
+            </div>
+          </a>
+        
+    
+        
+          <a href="assets/sites/carbon-calc/index.html" class="project-link">
+            <div class="project">
+                <div class="project-image">
+                    <img src="assets/images/gif/carb-calc.gif" alt="CALCO&lt;sub&gt;2&lt;/sub&gt;" />
+                </div>
+                <div class="project-text">
+                    <h3 class="project-title">CALCO<sub>2</sub></h3><br />
+                    <p class="project-description">retro style carbon footprint web interactive</p>
+                    <p class="project-date">2021</p>
+                </div>
+            </div>
+          </a>
+        
+    
+    </div>
+</div>
+
+
+        </div>
+    </body>
+</html>
+

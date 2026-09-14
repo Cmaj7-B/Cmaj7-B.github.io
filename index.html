@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bǎoqí Eileen Chen</title>
+        <meta name="description" content="UC Berkeley">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="icon" href="/assets/images/favicon.jpg" type="image/jpg">
+        <!-- Pre-paint hide to prevent zoom flicker -->
+        <style id="prepaint-hide">html{opacity:0}</style>
+        <!-- Uniform page scaling based on viewport height (no transitions) -->
+        <style>
+          html { --page-scale: 1; }
+          #container {
+            transform: scale(var(--page-scale));
+            transform-origin: top center;
+            width: calc(100% / var(--page-scale));
+          }
+        </style>
+        <script>
+        (function(){
+          var d=document;
+          function setScale(){
+            var vh = window.innerHeight || d.documentElement.clientHeight;
+            var targetH = 832; // baseline height where scale ≈ 1 (fits 1280×832)
+            var raw = vh / targetH;
+            var min = 0.94, max = 1.12; // clamp to avoid extremes
+            var scale = Math.min(max, Math.max(min, raw));
+            d.documentElement.style.setProperty('--page-scale', scale.toFixed(3));
+            // No layout height adjustments here; scaling is visual-only
+          }
+          // Compute before first paint and reveal
+          setScale();
+          var h = d.getElementById('prepaint-hide');
+          if (h && h.parentNode) h.parentNode.removeChild(h);
+          d.documentElement.style.opacity = '';
+          window.addEventListener('resize', setScale, {passive:true});
+          // Keep simple: only react to resizes; initial run already executed before reveal
+        })();
+        </script>
+    </head>
+    
+    <body>
+        <div id="container">
+            <h1 class="global-title">Bǎoqí Eileen Chen‍</h1>
+            
+            <nav>
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/">
+                        
+                            Home
+                        </a>
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/project">
+                        
+                            Work
+                        </a>
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/misc">
+                        
+                            Other
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            
+
+
+
+
+
+
+
+<div class="greeting-container">
+  <img src="/assets/images/high-res/me.jpg" alt="Bǎoqí Eileen Chen" class="avatar" />
+  <h3><p>I am a PhD student at the Department of City &amp; Regional Planning at UC Berkeley and graduate researcher in the <a href="https://humnetlab.berkeley.edu/index.php/people/eileen-chen/">HuMNet Lab</a>. Before graduate school, I studied climate system dynamics and was a journalist with R&amp;D experience in newsroom engineering. [<a href="https://github.com/cmaj7-b">GitHub</a> · <a href="https://scholar.google.com/citations?hl=en&amp;user=kuuM2TIAAAAJ">GoogleScholar</a> · <a href="https://www.linkedin.com/in/baoqi-eileen-chen-6a32ab19b/">LinkedIn</a>]</p>
+</h3>
+</div>
+
+
+
+<style>
+.ascii-art {
+  font-size: 0.88em;
+  line-height: 0.88; 
+  white-space: pre;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.9em;
+  margin-bottom: 0.7em;
+  padding-left: 0.5em;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: -0.5px;
+}
+</style>
+
+<div class="ascii-art">
+<pre>
++------------------ 🧠 -----------------+
+|        Complex Systems Approach       |
++---------------------------------------+
+                    |
++--------------- ✋ + 🤚 ---------------+
+|     Computing     |   Spatial,Digital |
+|     &amp; Models      |      Traces       |
++-------------------+-------------------+
+           |                  |
++----·----·---·---- ❤️ ----·---·----·---+
+|     Human Behavior in Space-Time      |
++----·----·----·----·----·----·----·----+
+                    |
++-------------------+-------------------+
+|        City       |      Planning     |
++----------------🦶-+-🦶----------------+
+</pre>
+</div>
+
+<h2 id="news">News</h2>
+<ul>
+  <li><span style="color: #5995C3;"><strong>[Conference]</strong></span> July ‘26. Work <a href="https://ic2s2-2026.org/">presented</a> at “Mobility, Urban Science, and Demography” session of <span style="font-family: Courier;">IC2S2-2026</span></li>
+  <li><span style="color: #5995C3;"><strong>[Conference]</strong></span> June ‘26. Work presented at <a href="https://urban-sys-net.weebly.com/">UrbanNET</a> satellite of <span style="font-family: Courier;">NetSci2026</span></li>
+  <li><span style="color: #5995C3;"><strong>[Conference]</strong></span> June ‘26. Work presented at <a href="https://mappingcomplexity.net/mainpage/netsci2026/">Network Geometry</a> satellite of <span style="font-family: Courier;">NetSci2026</span></li>
+  <li><span style="color: #5995C3;"><strong>[Conference]</strong></span> June ‘26. Work <a href="https://www.cberaproject.eu/cbera-forum/">presented</a> at <span style="font-family: Courier;">CBeRa Forum 2026</span></li>
+  <li><span style="color: #df6f86;"><strong>[Scholarship]</strong></span> May ‘26. <a href="https://na.eventscloud.com/website/92724/">Awarded</a> by SDSC’s HPC &amp; Data Science Summer Institute 2026</li>
+  <li><a href="/log-news"><strong>—&gt; view all</strong></a></li>
+</ul>
+
+
+        </div>
+    </body>
+</html>
+

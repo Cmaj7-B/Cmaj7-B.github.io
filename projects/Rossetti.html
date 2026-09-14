@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bǎoqí Eileen Chen</title>
+        <meta name="description" content="UC Berkeley">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="icon" href="/assets/images/favicon.jpg" type="image/jpg">
+        <!-- Pre-paint hide to prevent zoom flicker -->
+        <style id="prepaint-hide">html{opacity:0}</style>
+        <!-- Uniform page scaling based on viewport height (no transitions) -->
+        <style>
+          html { --page-scale: 1; }
+          #container {
+            transform: scale(var(--page-scale));
+            transform-origin: top center;
+            width: calc(100% / var(--page-scale));
+          }
+        </style>
+        <script>
+        (function(){
+          var d=document;
+          function setScale(){
+            var vh = window.innerHeight || d.documentElement.clientHeight;
+            var targetH = 832; // baseline height where scale ≈ 1 (fits 1280×832)
+            var raw = vh / targetH;
+            var min = 0.94, max = 1.12; // clamp to avoid extremes
+            var scale = Math.min(max, Math.max(min, raw));
+            d.documentElement.style.setProperty('--page-scale', scale.toFixed(3));
+            // No layout height adjustments here; scaling is visual-only
+          }
+          // Compute before first paint and reveal
+          setScale();
+          var h = d.getElementById('prepaint-hide');
+          if (h && h.parentNode) h.parentNode.removeChild(h);
+          d.documentElement.style.opacity = '';
+          window.addEventListener('resize', setScale, {passive:true});
+          // Keep simple: only react to resizes; initial run already executed before reveal
+        })();
+        </script>
+    </head>
+    
+    <body>
+        <div id="container">
+            <h1 class="global-title">Bǎoqí Eileen Chen‍</h1>
+            
+            <nav>
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/">
+                        
+                            Home
+                        </a>
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/project">
+                        
+                            Work
+                        </a>
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/misc">
+                        
+                            Other
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            
+
+
+
+<h1>
+  Rossetti, Revisiting
+</h1>
+
+
+
+
+
+
+<p><br />Eight years, <a href="https://dvpp.uvic.ca/poems/macmillan/1861/pom_14031_uphill.html">after</a> first read<br /></p>
+
+<style>
+.ascii-art {
+  font-size: 0.9em;
+  line-height: 1.5; 
+  white-space: pre;
+  display: flex;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  padding-left: 0.5em;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: -0.1px;
+}
+</style>
+
+<div class="ascii-art">
+<pre>
+"Does the road wind up-hill all the way?"
+"Yes, till the very end."
+           — ₍^. .^₎⟆ —
+      "if you only walk long enough"
+</pre>
+</div>
+<p><br /></p>
+
+<iframe frameborder="0" class="juxtapose" width="70%" height="1032.5196850393702" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=4c97f870-cb8b-11f0-ba1b-0e6f42328d7d"></iframe>
+
+
+        </div>
+    </body>
+</html>
+
