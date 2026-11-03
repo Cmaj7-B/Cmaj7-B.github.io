@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/preset-react": "^7.26.3"
+  },
+  "name": "cmaj7-b.github.io",
+  "version": "1.0.0",
+  "description": "Under dev 🚧",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Cmaj7-B@github.com/Cmaj7-B/Cmaj7-B.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cmaj7-B/Cmaj7-B.github.io/issues"
+  },
+  "homepage": "https://github.com/Cmaj7-B/Cmaj7-B.github.io#readme"
+}

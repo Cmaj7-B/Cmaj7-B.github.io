@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bǎoqí Eileen Chen</title>
+        <meta name="description" content="UC Berkeley">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="icon" href="/assets/images/favicon.jpg" type="image/jpg">
+        <!-- Pre-paint hide to prevent zoom flicker -->
+        <style id="prepaint-hide">html{opacity:0}</style>
+        <!-- Uniform page scaling based on viewport height (no transitions) -->
+        <style>
+          html { --page-scale: 1; }
+          #container {
+            transform: scale(var(--page-scale));
+            transform-origin: top center;
+            width: calc(100% / var(--page-scale));
+          }
+        </style>
+        <script>
+        (function(){
+          var d=document;
+          function setScale(){
+            var vh = window.innerHeight || d.documentElement.clientHeight;
+            var targetH = 832; // baseline height where scale ≈ 1 (fits 1280×832)
+            var raw = vh / targetH;
+            var min = 0.94, max = 1.12; // clamp to avoid extremes
+            var scale = Math.min(max, Math.max(min, raw));
+            d.documentElement.style.setProperty('--page-scale', scale.toFixed(3));
+            // No layout height adjustments here; scaling is visual-only
+          }
+          // Compute before first paint and reveal
+          setScale();
+          var h = d.getElementById('prepaint-hide');
+          if (h && h.parentNode) h.parentNode.removeChild(h);
+          d.documentElement.style.opacity = '';
+          window.addEventListener('resize', setScale, {passive:true});
+          // Keep simple: only react to resizes; initial run already executed before reveal
+        })();
+        </script>
+    </head>
+    
+    <body>
+        <div id="container">
+            <h1 class="global-title">Bǎoqí Eileen Chen‍</h1>
+            
+            <nav>
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/">
+                        
+                            Home
+                        </a>
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/project">
+                        
+                            Work
+                        </a>
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/misc">
+                        
+                            Other
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            
+
+
+
+<h1>
+  Tracking network dynamics of USC's sustainability initiatives
+</h1>
+
+
+
+
+
+
+<p><br />
+The project captures the diverse network across the campus to reflect the past and current efforts in sustainability, as well as the formation of new and expanded networks that are direct outcomes from the <a href="https://www.president.usc.edu/sustainability-pwg/">Presidential Working Group initiatives</a>. A dataset of sustainability initiatives was constructed by collecting open-source information and internally shared PWG meeting notes/reports.<br /><br /></p>
+
+<center><img src="/assets/images/high-res/sus-net-map.jpg" alt="sustainability network" width="70%" /></center>
+<p><br /></p>
+<center><span><i>Scroll down for a network evolution interactive. Hover on nodes for details.</i></span></center>
+<center><span>▼</span></center>
+<p><br /></p>
+
+<center><div class="flourish-embed" data-src="story/3032193"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/story/3032193/thumbnail" width="50%" alt="visualization" /></noscript></div></center>
+
+<h3 id="acknowledgements">Acknowledgements</h3>
+<p>The project was proposed and developed as an supervised independent research with the support of Presidential Working Group faculty Prof. Bhavna Sharma. It was presented to PWG members at the 2021-2022 end-of-year meeting.</p>
+
+
+        </div>
+    </body>
+</html>
+

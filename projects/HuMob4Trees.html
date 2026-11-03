@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bǎoqí Eileen Chen</title>
+        <meta name="description" content="UC Berkeley">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="icon" href="/assets/images/favicon.jpg" type="image/jpg">
+        <!-- Pre-paint hide to prevent zoom flicker -->
+        <style id="prepaint-hide">html{opacity:0}</style>
+        <!-- Uniform page scaling based on viewport height (no transitions) -->
+        <style>
+          html { --page-scale: 1; }
+          #container {
+            transform: scale(var(--page-scale));
+            transform-origin: top center;
+            width: calc(100% / var(--page-scale));
+          }
+        </style>
+        <script>
+        (function(){
+          var d=document;
+          function setScale(){
+            var vh = window.innerHeight || d.documentElement.clientHeight;
+            var targetH = 832; // baseline height where scale ≈ 1 (fits 1280×832)
+            var raw = vh / targetH;
+            var min = 0.94, max = 1.12; // clamp to avoid extremes
+            var scale = Math.min(max, Math.max(min, raw));
+            d.documentElement.style.setProperty('--page-scale', scale.toFixed(3));
+            // No layout height adjustments here; scaling is visual-only
+          }
+          // Compute before first paint and reveal
+          setScale();
+          var h = d.getElementById('prepaint-hide');
+          if (h && h.parentNode) h.parentNode.removeChild(h);
+          d.documentElement.style.opacity = '';
+          window.addEventListener('resize', setScale, {passive:true});
+          // Keep simple: only react to resizes; initial run already executed before reveal
+        })();
+        </script>
+    </head>
+    
+    <body>
+        <div id="container">
+            <h1 class="global-title">Bǎoqí Eileen Chen‍</h1>
+            
+            <nav>
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/">
+                        
+                            Home
+                        </a>
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/project">
+                        
+                            Work
+                        </a>
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/misc">
+                        
+                            Other
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            
+
+
+
+<h1>
+  Modeling sidewalk traffic to guide equitable urban forest planning
+</h1>
+
+
+
+
+
+
+<p><br />
+In collaboration with City of Los Angeles’ Green New Deal to plant 100,000 trees, this project designed a reproducible GIS framework to guide equitable sidewalk tree placement based on pedestrian mobility patterns, implementing Dijkstra algorithm-based network analyses in ArcGIS. A multi-source data fusion was deployed to model pedestrian routes from residences to elementary schools and transit stops, identifying high-traffic street segments that would maximize environmental health benefits for vulnerable populations, particularly children and transit-dependent residents. A suite of ArcPy-powered spatial automation tools was developed to streamline the analytical process, scale it across neighborhoods, and support community parterners as a technical resource.</p>
+
+<h3 id="acknowledgements">Acknowledgements</h3>
+<p>The project received feedback from partners and researchers of the <a href="https://publicexchange.usc.edu/about-us">USC Urban Trees Initiative </a>and from attendees of the 2023 Los Angeles Geospatial Summit, during which it was presented as a <a href="https://storymaps.arcgis.com/stories/5bcfb20b61fc4791b4948ea8734eb769">Story Map</a>. A case study <a href="https://link.springer.com/article/10.1186/s12942-023-00324-9/figures/1">map</a> was published as part of (Kamel and Wilson 2023).</p>
+
+<h3 id="references">References</h3>
+<p>Kamel Boulos, M. N., &amp; Wilson, J. P. (2023). Geospatial techniques for monitoring and mitigating climate change and its effects on human health. <em>International Journal of Health Geographics</em>, 22(1), 2. https://doi.org/10.1186/s12942-023-00324-9.</p>
+
+
+        </div>
+    </body>
+</html>
+

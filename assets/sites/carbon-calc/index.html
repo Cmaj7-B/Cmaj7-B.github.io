@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CALCO2</title>
+
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇨</text></svg>">
+
+	<!-- viewport for responsive -->	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- character set -->
+    <meta charset="UTF-8">
+    
+  <!--   <fonts> -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=IM+Fell+English+SC&family=Cormorant+Upright&family=Libre+Barcode+39&display=swap" rel="stylesheet">
+
+	<!-- CSS stylesheets -->	
+	<link href="css/normalize.css" rel="stylesheet" type="text/css">
+	<link href="css/jqueryui.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	
+  </head>
+  <body>
+
+
+<!-- PAGE -->
+  <div class="macro">
+
+  	<div class = "author">Eileen Chen&copy;2021</div>
+<!--   	LEFTBAR -->
+  	<div class="leftbar">
+  		<div class="l methodology">ABOUT</div>
+  		<div class="l contact">CONTACT</div>
+  		<div class="l regenerate">REGENERATE</div>
+  	</div><!-- ends LEFTBAR -->
+
+<!--   	MIDDLECALC -->
+    <div class="carboncalc">
+
+<!--     	CALCULATOR - top -->
+    	<div class="ctop">
+
+    		<center class="headline">
+    			<span><b>&copy;Carbon Calculator</b></span>
+    		</center>
+
+    		<div class="ctopright">
+
+					<div class="model">
+			      <span><b>fx-CO2E</b></span>
+			    </div>
+
+	    		<center class="banner">
+						<span>HOW MUCH CO2 EMISSION CAN YOU REDUCE A YEAR?</span>
+	    		</center>
+
+	    	</div>
+
+    	</div><!-- ends ctop -->
+    	
+<!--     	CALCULATOR - middle -->
+    	<div class="container">
+
+	    	<!-- checkbox -->
+	    	<div class="checkbox">
+
+	    		<div class="cintro"><span>CHECK THE STATEMENT(S) THAT APPLY. </span></div>
+
+	    		<table>
+	    			<tr>
+	    				<td class="description"><span>Recycle as much as you can. </span></td>
+	    				<td class="var"><input class="recycle cc" type="checkbox"></td>
+	    			</tr>
+	    			<tr>
+	    				<td class="description"><span>Eat a plant-based diet. </span></td>
+	    				<td class="var"><input class="diet cc" type="checkbox"></td>
+	    			</tr>
+	    			<tr>
+	    				<td class="description"><span>Use reusable shopping bags. </span></td>
+	    				<td class="var"><input class="shopping cc" type="checkbox"></td>
+	    			</tr>
+	    		</table>
+		  
+		  	</div><!-- ends checkbox -->
+
+		    <!-- INPUTBOX -->
+		    <div class="inputbox">
+
+		    	<div class="cintro"><span>ENTER THE QUANTITY YOU CAN SAVE ANNUALLY FOR EACH ITEM. </span></div>
+
+		    	<table>
+
+		    		<tr>
+		    			<td class="description"><span>Buy 1 fewer piece of clothes. </span></td>
+		    			<td class="var"><input class="clothes input" type="number"><span></td>
+		    		</tr>
+
+		    		<tr>
+		    			<td class="description"><span>Use 1 fewer piece of plastic utensil. </span></td>
+		    			<td class="var"><input class="dine input" type="number" ><span></span></td>
+		    		</tr>
+
+		    		<tr>
+		    			<td class="description"><span>Request 1 fewer print receipt. </span></td>
+		    			<td class="var"><input class="electronic input" type="number"><span></span></td>
+		    		</tr>
+		    		
+		    	</table>
+		    
+		    </div><!-- ends inputbox -->
+
+	  	</div><!-- ends container -->
+
+<!-- 	  	CALCULATOR - bottom -->
+	  	<div class="button">
+
+	  		<div class="buttonleft">
+		      
+		      <div class="name">
+			      <span><b>Your Name: </b></span>
+			      <input class="inputname input" id="namemessage">
+		      </div>
+
+		    	<div class="barcode">
+		    	</div>
+
+		    </div><!-- ends buttonleft -->
+
+	      <div class="generate">
+	      	<div class="generatetext">
+	      	<p>CLICK CALC!</p>
+	      	</div>
+	      </div>
+	    
+	    </div><!-- ends button -->
+
+    </div><!-- ends CARBONCALC -->
+ 
+
+<!-- RECEIPT -->
+    <div class="receipt">
+
+    		<center class="top">
+    			<h2>REDUCTION RECEIPT</h2>
+    			<h3>FOR A YEAR</h3>
+    		</center>
+
+    		<div class="info">
+    			<div class="rname"><p></p></div>
+    			<p class="time"></p>
+    		</div>
+
+    		<div class="mid">
+	    	
+	    	<!-- header -->
+	    		<div class="midheader">	
+	    			<div class="qheader"><p>QTY</p></div>
+	    			<div class="iheader"><p>ITEM</p></div>
+	    			<div class="aheader"><p>AMT</p></div>
+	    		</div>
+
+	    	<!-- body -->
+	    		<table class="receipttable">
+	    			
+	    			<!-- CHECKBOX -->
+	    			<tr class="rowrecycling">
+	    				<td class="quantity"><p class="itemtext">1</p></td>
+	    				<td class="item"><p class="itemtext">PRACTICE RECYCLING AS MUCH AS YOU CAN.</p></td>
+	    				<td class="amount"><p class="itemtext">210 KG</p></td>
+	    			</tr>
+
+	    			<tr class="rowdiet">
+	    				<td class="quantity"><p class="itemtext">1</p></td>
+	    				<td class="item"><p class="itemtext">EAT A PLANT-BASED DIET.</p></td>
+	    				<td class="amount"><p class="itemtext">800 KG</p></td>
+	    			</tr>
+	    			
+	    			<tr class="rowshopping">
+	    				<td class="quantity"><p class="itemtext">1</p></td>
+	    				<td class="item"><p class="itemtext">USE REUSABLE SHOPPING BAG.</p></td>
+	    				<td class="amount"><p class="itemtext">5 KG</p></td>
+	    			
+	    			<!-- INPUTBOX -->
+	    			<tr class="rowclothes">
+	    				<td class="quantity"><p class="itemtext qtyc"></p></td>
+	    				<td class="item"><p class="itemtext">BUY ONE FEWER PIECE OF CLOTHES.</p></td>
+	    				<td class="amount"><p class="itemtext amtc"></p></td>
+	    			</tr>
+	    			
+	    			<tr class="rowdine">
+	    				<td class="quantity"><p class="itemtext qtyd"></p></td>
+	    				<td class="item"><p class="itemtext">USE ONE FEWER PIECE OF DISPOSABLE TABLEWARE.</p></td>
+	    				<td class="amount"><p class="itemtext amtd"></p></td>
+	    			</tr>
+
+	    			<tr class="rowelectronic">
+	    				<td class="quantity"><p class="itemtext qtye"></p></td>
+	    				<td class="item"><p class="itemtext">REQUEST ONE FEWER PRINT RECEIPT.</p></td>
+	    				<td class="amount"><p class="itemtext amte"></p></td>
+	    			</tr>
+    			</table>
+
+    		<!-- end -->
+    			<div class="midend">
+    				<div class="total"><p>TOTAL:</p></div>
+    				<div class="totalinput"><p class=amtt></p></div>
+    			</div>
+
+				<!-- info -->
+    			<div class="endinfo">
+    				<p>AUDITOR: EILEEN CHEN</p>
+    				<p>TRAINED BY: <a href = 'https://web-app.usc.edu/soc/syllabus/20213/21165.pdf'>J320 F'21</a>
+    				<p>@USCAnnenberg</p>
+    			</div>
+
+    		</div><!-- ends mid -->
+
+    		<center class="end">
+    			<p>SHARE THIS WITH A FRIEND!</p>
+    			<img src="img/qr-code.png">
+    		</center>
+    	
+    </div><!-- ends RECEIPT -->
+
+  </div><!-- ends macro -->
+
+
+<!-- JAVASCRIPT -->
+	<script src="js/jquery.js"></script>
+	<script src="js/jqueryui.js"></script>
+	<script src="js/script.js"></script>
+  </body>
+</html>
+
+
+
+
+

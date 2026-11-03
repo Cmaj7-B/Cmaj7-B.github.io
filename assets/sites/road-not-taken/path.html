@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: monospace;
+      background: white;
+      color: black;
+      padding: 1rem;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 100vw;
+    }
+    .poem {
+      font-size: min(3vw, 1rem);
+      max-width: 90vw;
+      text-align: center;
+      white-space: pre-wrap;
+      line-height: 1.3;
+    }
+    #path-container {
+      font-size: min(2.5vw, 0.9rem);
+      line-height: 1.2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 85vw;
+      text-align: center;
+      white-space: pre;
+    }
+    pre {
+      text-align: center;
+      margin: 0;
+      white-space: pre;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="poem">
+      <p>
+Two roads diverged in a yellow wood,
+And sorry I could not travel both
+And be one traveler, long I stood
+And looked down one as far as I could
+To where it bent in the undergrowth;
+Then took the other, as just as fair,
+And having perhaps the better claim,
+Because it was grassy and wanted wear;
+Though as for that the passing there
+Had worn them really about the same,
+And both that morning equally lay
+In leaves no step had trodden black.
+Oh, I kept the first for another day!
+Yet knowing how way leads on to way,
+I doubted if I should ever come back.
+I shall be telling this with a sigh
+Somewhere ages and ages hence:
+Two roads diverged in a wood, and I—
+I took the one less traveled by,
+And that has made all the difference.
+<br>Robert Frost, <a href ="https://cdn.theatlantic.com/media/archives/1915/08/116-2/132441372.pdf">1915</a>
+      </p>
+    </div>
+    <div id="path-container"></div>
+  </div>
+  <script>
+    let forkDrawn = false;
+    const screenWidth = Math.min(window.innerWidth, 600);
+    const totalWidth = Math.floor(screenWidth / 7) * 7;
+    const centerPoint = Math.floor(totalWidth / 2);
+    const leafTypes = ["🍂", "🍁"];
+
+    function generateFirstFork() {
+      const top = " ".repeat(centerPoint - 1) + "|" + " ".repeat(centerPoint - 1);
+      const line4 = " ".repeat(centerPoint - 11) + "──────────" + "┴" + "──────────" + " ".repeat(centerPoint - 11);
+      const branchLine = " ".repeat(centerPoint - 11) + "|||" + " ".repeat(12) + "|||" + " ".repeat(centerPoint - 11);
+      return [top, top, top, line4, branchLine, branchLine].join("\n") + "\n";
+    }
+
+    function decorateBranch(branchStr) {
+      let chars = branchStr.split('');
+      if (Math.random() < 0.4) {
+        const pos = Math.floor(Math.random() * chars.length);
+        const leaf = leafTypes[Math.floor(Math.random() * leafTypes.length)];
+        chars[pos] = leaf;
+      }
+      return chars.join('');
+    }
+
+    function generateVerticalSegment() {
+      const segmentLines = [];
+      const numLines = 4;
+      const leftBase = centerPoint - 11;
+      const rightBase = centerPoint + 7;
+
+      for (let i = 0; i < numLines; i++) {
+        const leftOffset = Math.floor(Math.random() * 3) - 1;
+        const rightOffset = Math.floor(Math.random() * 3) - 1;
+        const leftPos = leftBase + leftOffset;
+        const rightPos = rightBase + rightOffset;
+        const leftBranch = decorateBranch("|||");
+        const rightBranch = decorateBranch("|||");
+
+        let gap = rightPos - (leftPos + 3);
+        if (gap < 1) gap = 1;
+        const used = leftPos + 3 + gap + 3;
+        const trailing = totalWidth - used;
+        const line = " ".repeat(leftPos) + leftBranch + " ".repeat(gap) + rightBranch + " ".repeat(trailing);
+        segmentLines.push(line);
+      }
+      return segmentLines.join("\n") + "\n";
+    }
+
+    function generateEndlessPath() {
+      const pathContainer = document.getElementById("path-container");
+      if (!forkDrawn) {
+        const newSegment = document.createElement("pre");
+        newSegment.innerText = generateFirstFork();
+        pathContainer.appendChild(newSegment);
+        forkDrawn = true;
+      } else {
+        const newSegment = document.createElement("pre");
+        newSegment.innerText = generateVerticalSegment();
+        pathContainer.appendChild(newSegment);
+      }
+    }
+
+    document.addEventListener("scroll", function () {
+      if (window.scrollY + window.innerHeight >= document.body.scrollHeight - 100) {
+        generateEndlessPath();
+      }
+    });
+
+    for (let i = 0; i < 10; i++) {
+      generateEndlessPath();
+    }
+  </script>
+</body>
+</html>
